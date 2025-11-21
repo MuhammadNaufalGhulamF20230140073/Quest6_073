@@ -12,6 +12,15 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.navigasidata.viewmodel.SiswaViewModel
 
 enum class Navigasi {
     Formulir,
+    Detail
+}
+@Composable
+fun DataApp(
+    modifier: Modifier,
+    viewModel: SiswaViewModel = viewModel(),
+    navController: NavHostController = rememberNavController(),
+){
