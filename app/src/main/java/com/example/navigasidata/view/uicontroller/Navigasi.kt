@@ -24,3 +24,6 @@ fun DataApp(
     viewModel: SiswaViewModel = viewModel(),
     navController: NavHostController = rememberNavController(),
 ){
+    Scaffold { isiRuang->
+        val uiState = viewModel.statusUI.collectAsState()
+        NavHost(
