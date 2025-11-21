@@ -1,7 +1,7 @@
-package com.example.navigasidata.view
-
 @file:OptIn(ExperimentalMaterial3Api::class)
 
+package com.example.navigasidata.view
+import com.example.navigasidata.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -122,7 +122,7 @@ fun FormIsian(
                 enabled = txtAlamat.isNotEmpty(),
                 onClick = { OnSubmitBtnClick(listData) }
             ) {
-                Text(stringResource(id=R.string.submit))
+                Text(stringResource(id= R.string.submit))
             }
         }
     }
