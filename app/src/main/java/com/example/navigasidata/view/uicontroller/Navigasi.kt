@@ -27,3 +27,6 @@ fun DataApp(
     Scaffold { isiRuang->
         val uiState = viewModel.statusUI.collectAsState()
         NavHost(
+            navController = navController,
+            startDestination = Navigasi.Formulir.name,
+
