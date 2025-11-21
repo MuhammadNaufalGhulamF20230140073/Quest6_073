@@ -28,5 +28,8 @@ fun DataApp(
         val uiState = viewModel.statusUI.collectAsState()
         NavHost(
             navController = navController,
-            startDestination = Navigasi.Formulir.name,
+            startDestination = Navigasi.Formulir.name
+
+                    modifier = Modifier.padding(isiRuang)){
+            composable(route = Navigasi.Formulir.name){
 
