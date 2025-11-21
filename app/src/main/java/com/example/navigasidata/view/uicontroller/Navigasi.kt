@@ -12,6 +12,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.navigasidata.view.FormIsian
 import com.example.navigasidata.viewmodel.SiswaViewModel
 
 enum class Navigasi {
@@ -32,4 +33,8 @@ fun DataApp(
 
                     modifier = Modifier.padding(isiRuang)){
             composable(route = Navigasi.Formulir.name){
+                val konteks = LocalContext.current
+                FormIsian (
+
+
 
