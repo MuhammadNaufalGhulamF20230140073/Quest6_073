@@ -51,8 +51,11 @@ fun DataApp(
                 )
             }
         }
-
     }
+}
+private fun cancelAndBackToFormulir(
+    navController: NavHostController
+) {
 
 
 
