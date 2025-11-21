@@ -21,6 +21,7 @@ enum class Navigasi {
     Formulir,
     Detail
 }
+
 @Composable
 fun DataApp(
     modifier: Modifier,
@@ -31,9 +32,9 @@ fun DataApp(
         val uiState = viewModel.statusUI.collectAsState()
         NavHost(
             navController = navController,
-            startDestination = Navigasi.Formulir.name
+            startDestination = Navigasi.Formulir.name,
 
-                    modifier = Modifier.padding(isiRuang)){
+            modifier = Modifier.padding(isiRuang)){
             composable(route = Navigasi.Formulir.name){
                 val konteks = LocalContext.current
                 FormIsian (
@@ -51,7 +52,9 @@ fun DataApp(
                 )
             }
         }
+
     }
+
 }
 private fun cancelAndBackToFormulir(
     navController: NavHostController
@@ -59,8 +62,6 @@ private fun cancelAndBackToFormulir(
     navController.popBackStack(Navigasi.Formulir.name,
         inclusive = false)
 }
-
-
 
 
 
